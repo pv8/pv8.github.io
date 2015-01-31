@@ -3,4 +3,6 @@ _site/
 .sass-cache/
 .rbenv/
 
+Gemfile.lock
+
 .DS_Store

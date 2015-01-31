@@ -14,3 +14,6 @@ ga_tracking_code: UA-34825674-1
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-sitemap
