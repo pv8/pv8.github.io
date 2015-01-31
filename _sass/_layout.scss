@@ -86,7 +86,27 @@
     }
 }
 
+/**
+ * Site main page
+ */
+.main-side {
+    width: 20%;
+    margin: auto;
+    float: left;
+    text-align: center;
+ }
 
+.main-content {
+    width: 80%;
+    float: right;
+    text-align: justify;
+}
+
+.main-footer {
+    width: 80%;
+    clear: both;
+    text-align: center;
+}
 
 /**
  * Site footer
@@ -157,6 +177,14 @@
         float: none;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+
+    .main-side {
+        display: none;
+    }
+
+    .main-content {
+        width: 100%;
     }
 }
 

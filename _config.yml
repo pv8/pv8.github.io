@@ -1,3 +1,6 @@
+# General
+exclude: [".gitignore", "README.md", "LICENSE"]
+
 # Site settings
 title: Pablo O Vieira
 email: mail@povieira.com

@@ -203,3 +203,18 @@ pre {
         }
     }
 }
+
+
+.circular-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background-size: 120px 120px;
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
