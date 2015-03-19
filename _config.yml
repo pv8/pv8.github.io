@@ -4,9 +4,11 @@ exclude: [".gitignore", "README.md", "LICENSE"]
 # Site settings
 title: Pablo O Vieira
 email: mail@povieira.com
-description: > # this means to ignore newlines until "baseurl:"
-  Pablo O Vieira personal website. Keywords: project management, agile,
-  software, coding, programming, python, database, gamification
+
+meta:
+  description: "Pablo O Vieira personal website."
+  keywords: project management, agile, software, coding, programming, python, database, gamification
+
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://povieira.com" # the base hostname & protocol for your site
 
@@ -17,3 +19,7 @@ markdown: kramdown
 
 gems:
   - jekyll-sitemap
+
+disqus_shortname: povieira
+
+author: Pablo
