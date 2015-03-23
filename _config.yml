@@ -1,6 +1,8 @@
 # General
 exclude: [".gitignore", "README.md", "LICENSE"]
 
+timezone: America/Sao_Paulo
+
 # Site settings
 title: Pablo O Vieira
 email: mail@povieira.com
