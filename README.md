@@ -26,4 +26,8 @@ Other icons made by [Elegant Themes](http://www.elegantthemes.com) from
 [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/).
 
 ## License
-[MIT Licensed](http://www.opensource.org/licenses/mit-license.php).
+The following directories and their contents are Copyright Pablo O Vieira. You may not reuse anything therein without my explicit permission:
+
+* [_posts](https://github.com/povieira/povieira.github.io/tree/master/_posts)
+
+All other directories and files are [MIT Licensed](http://www.opensource.org/licenses/mit-license.php).

@@ -15,7 +15,7 @@
 
       <div class="trigger">
         {% if site.posts.size > 0 %}
-          <a class="page-link" href="{{ "/blog" | prepend: site.baseurl }}">Blog</a>
+          <a class="page-link" href="{{ "/posts" | prepend: site.baseurl }}">Posts</a>
         {% endif %}
         {% for page in site.pages %}
           {% if page.title %}
