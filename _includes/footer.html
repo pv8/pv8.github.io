@@ -4,7 +4,8 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col">
-        {% for s in site.data.social.list %}
+        {% for social_hash in site.data.social %}
+        {% assign s = social_hash[1] %}
           {% if s.active %}
           <a href="{{ s.url }}" target="_blank" class="icon-link">
             <span class="icon icon--{{ s.name }}">
