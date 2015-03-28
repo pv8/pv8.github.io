@@ -11,10 +11,10 @@ Source code from my personal website.
   $ git clone git@github.com:povieira/povieira.github.io.git
   ```
 
-3. Run jekyll:
+3. Run jekyll locally:
 
   ```bash
-  $ bundle exec jekyll serve
+  $ bundle exec jekyll serve --config _config.yml,_config_local.yml
   ```
 And the site will be available at `http://localhost:4000`.
 
