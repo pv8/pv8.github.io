@@ -84,6 +84,16 @@
             padding: 5px 10px;
         }
     }
+
+    ul {
+      list-style: none;
+      margin-left: 0;
+    }
+
+    li {
+      float: left;
+      padding-bottom: 6px;
+    }
 }
 
 /**

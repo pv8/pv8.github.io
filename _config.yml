@@ -1,5 +1,5 @@
 # General
-exclude: [".gitignore", "README.md", "LICENSE"]
+exclude: [".gitignore", "README.md", "LICENSE", "Gemfile", "Gemfile.lock"]
 
 timezone: America/Sao_Paulo
 
@@ -16,12 +16,15 @@ url: "http://povieira.com" # the base hostname & protocol for your site
 
 ga_tracking_code: UA-34825674-1
 
+# Posts
+permalink: /posts/:year/:month/:day/:title/
+
+disqus_shortname: povieira
+
+author: Pablo
+
 # Build settings
 markdown: kramdown
 
 gems:
   - jekyll-sitemap
-
-disqus_shortname: povieira
-
-author: Pablo
