@@ -3,12 +3,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.meta.description }}{% endif %}">
+  {% capture page_title %}{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
+  {% capture page_description %}{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.meta.description }}{% endif %}{% endcapture %}
+  {% capture url %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page_description }}">
   <meta name="keywords" content="{{ site.meta.keywords }}">
 
+  <!-- Twitter Cards metatags -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@povieira" />
+  <meta name="twitter:creator" content="@povieira">
+  <meta name="twitter:title" content="{{ page_title }}" />
+  <meta name="twitter:description" content="{{ page_description }}" />
+  {% if page.image %}
+    <meta name="twitter:image" content="{{ page.image }}" />
+  {% endif %}
+  <meta name="twitter:url" content="{{ url }}" />
+
+  <!-- Open Graph metatags -->
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:title" content="{{ page_title }}" />
+  <meta property="og:description" content="{{ page_description }}" />
+
+  {% if page.excerpt %}
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}" />
+    <meta property="article:author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}" />
+    <meta property="article:section" content="{{ page.categories }}" />
+    {% for tag in page.tags %}
+      <meta property="article:tag" content="{{ tag }}" />
+    {% endfor %}
+  {% else %}
+    <meta property="og:type" content="website" />
+  {% endif %}
+  <meta property="og:url" content="{{ url }}" />
+  {% if page.image %}
+    <meta property="og:image" content="{{ page.image }}" />
+  {% endif %}
+
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="canonical" href="{{ url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
   <link rel="author" href="{{ site.data.social.04gplus.url }}?rel=author" />
 </head>
