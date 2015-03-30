@@ -23,6 +23,11 @@ disqus_shortname: povieira
 
 author: Pablo
 
+# Profile
+profile:
+  name: Pablo O Vieira
+  avatar: https://s.gravatar.com/avatar/80fc0ea8a3a2161074feb3725901d093?s=200
+
 # Build settings
 markdown: kramdown
 

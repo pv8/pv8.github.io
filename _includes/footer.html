@@ -5,13 +5,13 @@
     <div class="footer-col-wrapper">
       <div class="footer-col">
         {% for social_hash in site.data.social %}
-        {% assign s = social_hash[1] %}
+          {% assign s = social_hash[1] %}
           {% if s.active %}
           <a href="{{ s.url }}" target="_blank" class="icon-link">
             <span class="icon icon-{{ s.name }}">
               <svg viewBox="{{ s.svg.viewBox }}">
                 {% for path in s.svg.paths %}
-                <path fill="#828282" d="{{ path }}" />
+                  <path fill="#828282" d="{{ path }}" />
                 {% endfor %}
               </svg>
             </span>
@@ -21,7 +21,7 @@
         <br/><br/>
       </div>
       <div class="footer-col">
-        <span class="post-meta">Copyright &#169; 2015 • {{ site.title }}</span>
+        <span class="post-meta">Copyright &#169; 2015 • {{ site.profile.name }}</span>
       </div>
     </div>
   </div>

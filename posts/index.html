@@ -17,6 +17,7 @@ layout: default
         <span class="post-heading">
             <p> {{ post.excerpt }} </p>
         </span>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-meta">Read more</a>
       </li>
     {% endfor %}
   </ul>
