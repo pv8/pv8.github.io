@@ -8,7 +8,7 @@
         {% assign s = social_hash[1] %}
           {% if s.active %}
           <a href="{{ s.url }}" target="_blank" class="icon-link">
-            <span class="icon icon--{{ s.name }}">
+            <span class="icon icon-{{ s.name }}">
               <svg viewBox="{{ s.svg.viewBox }}">
                 {% for path in s.svg.paths %}
                 <path fill="#828282" d="{{ path }}" />
@@ -19,7 +19,9 @@
           {% endif %}
         {% endfor %}
         <br/><br/>
-        <span class="post-meta">Copyright &#169; 2015 • Pablo O Vieira (povieira)</span>
+      </div>
+      <div class="footer-col">
+        <span class="post-meta">Copyright &#169; 2015 • {{ site.title }}</span>
       </div>
     </div>
   </div>

@@ -204,6 +204,16 @@ pre {
     }
 }
 
+@include media-query($on-palm) {
+  .icon {
+    margin: $spacing-unit / 4;
+    > svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
+
 a.icon-link {
     text-decoration: none;
 }
@@ -224,6 +234,12 @@ a.icon-link:hover {
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+    @include media-query($on-palm) {
+      width: 75px;
+      height: 75px;
+      background-size: 75px 75px;
+    }
 }
 
 .profile-picture {
