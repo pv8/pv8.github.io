@@ -4,21 +4,18 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col">
-        {% for social_hash in site.data.social %}
-          {% assign s = social_hash[1] %}
-          {% if s.active %}
-          <a href="{{ s.url }}" target="_blank" class="icon-link">
-            <span class="icon icon-{{ s.name }}">
-              <svg viewBox="{{ s.svg.viewBox }}">
-                {% for path in s.svg.paths %}
-                  <path fill="#828282" d="{{ path }}" />
-                {% endfor %}
-              </svg>
-            </span>
-          </a>
-          {% endif %}
-        {% endfor %}
-        <br/><br/>
+        <ul class="social-links">
+          {% for profile_hash in site.data.social-profiles %}
+            {% assign profile = profile_hash[1] %}
+            <li>
+              <a href="{{ profile.url }}" target="_blank" class="icon-link">
+                <span class="icon-desc">{{ profile.name }}</span>
+                <br/>
+                <i class="fa fa-{{ profile_hash[0] }} fa-3x icon"></i>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
       <div class="footer-col">
         <span class="post-meta">Copyright &#169; 2015 • {{ site.profile.name }}</span>

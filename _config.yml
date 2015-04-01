@@ -1,5 +1,10 @@
 # General
-exclude: [".gitignore", "README.md", "LICENSE", "Gemfile", "Gemfile.lock"]
+exclude:
+  - ".gitignore"
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
 
 timezone: America/Sao_Paulo
 

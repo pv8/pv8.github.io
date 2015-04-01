@@ -190,7 +190,8 @@ pre {
  * Icons
  */
 .icon {
-    margin: $spacing-unit / 2;
+    margin: 0 $spacing-unit / 2;
+    color: $grey-color;
 
     > svg {
         display: inline-block;
@@ -202,26 +203,43 @@ pre {
             fill: $grey-color;
         }
     }
+
+    @include media-query($on-palm) {
+      margin: $spacing-unit / 4;
+    }
 }
 
-@include media-query($on-palm) {
-  .icon {
-    margin: $spacing-unit / 4;
-    > svg {
-      width: 28px;
-      height: 28px;
-    }
-  }
+.icon-desc {
+  opacity: 0.0;
+  text-align: center;
 }
 
 a.icon-link {
     text-decoration: none;
+
 }
+
 a.icon-link:hover {
     opacity: 0.6;
+
+    .icon-desc {
+      display: inline-block;
+      opacity: 0.6;
+    }
 }
 
+.social-links {
+  list-style: none;
+  text-align: center;
 
+  > li {
+    display: inline-block;
+  }
+}
+
+/**
+ * Profile image
+ */
 .circular-image {
     width: 120px;
     height: 120px;

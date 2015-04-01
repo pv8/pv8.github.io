@@ -1,9 +1,12 @@
 # povieira.github.io
+[![Build Status](https://travis-ci.org/povieira/povieira.github.io.svg?branch=master)](https://travis-ci.org/povieira/povieira.github.io)
+
 Source code from my personal website.
 
 ## Running locally
 
-1. Setup the environment as described in [Github Help](https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll)
+1. Setup the environment as described in [Github Help][github-help]
+[jekyll]:
 
 2. Clone this repository:
 
@@ -11,23 +14,31 @@ Source code from my personal website.
   $ git clone git@github.com:povieira/povieira.github.io.git
   ```
 
-3. Run jekyll locally:
+3. Running jekyll locally:
 
   ```bash
   $ bundle exec jekyll serve --config _config.yml,_config_local.yml
   ```
 And the site will be available at `http://localhost:4000`.
 
-## Credits
-Layout and Github icon from [Jekyll](http://jekyllrb.com/) default theme.
+4. Testing:
+```bash
+$ bundle exec rake test
+```
 
-Other icons made by [Elegant Themes](http://www.elegantthemes.com) from
-[www.flaticon.com](http://www.flaticon.com) are licensed under
-[CC BY 3.0](http://creativecommons.org/licenses/by/3.0/).
+
+## Credits
+- Layout from [Jekyll][jekyll] default theme
+- Icons by [Font-Awesome][fontawesome]
 
 ## License
 The following directories and their contents are Copyright Pablo O Vieira. You may not reuse anything therein without my explicit permission:
 
 * [_posts](https://github.com/povieira/povieira.github.io/tree/master/_posts)
 
-All other directories and files are [MIT Licensed](http://www.opensource.org/licenses/mit-license.php).
+All other directories and files are [MIT Licensed][mit-license].
+
+[github-help]: https://help.github.com/articles/using-jekyll-with-pages/#github-help
+[jekyll]: http://jekyllrb.com/
+[fontawesome]: http://fontawesome.io/
+[mit-license]: http://www.opensource.org/licenses/mit-license.php
