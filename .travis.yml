@@ -1,0 +1,17 @@
+language: ruby
+rvm:
+  - 2.2.0
+
+before_script: bundle update
+
+script:
+  - bundle exec jekyll build
+  - time bundle exec rake test
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+notifications:
+  email:
+    on_success: never
