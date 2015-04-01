@@ -2,6 +2,7 @@
 layout: post
 title:  "Running a simple HTTP server with Python"
 date:   2015-03-23 19:00:00 -0300
+updated: 2015-04-01 11:30:00 -0300
 categories: python
 comments: true
 ---
@@ -18,16 +19,16 @@ We will get a message informing that it's serving on port 8000 (which is the def
 Serving HTTP on 0.0.0.0 port 8000 ...
 {% endhighlight %}
 
-And that's it!
+And that's it! It's serving our directory on `http://localhost:8000`.
 
-For example, let's say we want to share our `~/Pictures` directory on our local network on port `5000`:
+For example, let's say I want to share my `~/Pictures` directory with my colleagues via local network on port `5000`:
 {% highlight bash %}
 $ cd ~/Pictures/
 $ python -m SimpleHTTPServer 5000
 Serving HTTP on 0.0.0.0 port 5000 ...
 {% endhighlight %}
 
-And it's serving the contents of our `~/Pictures` directory on [http://127.0.0.1:5000](http://127.0.0.1:5000)
+Assuming my IP address on the local network is `10.1.0.1`, my colleagues will be able to check out my pictures on `http://10.1.0.1:5000`.
 
 #### Python 3
 
