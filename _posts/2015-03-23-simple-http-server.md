@@ -3,7 +3,11 @@ layout: post
 title:  "Running a simple HTTP server with Python"
 date:   2015-03-23 19:00:00 -0300
 updated: 2015-04-01 11:30:00 -0300
-categories: python
+categories: Dev
+tags:
+  - http server
+  - python
+  - tips
 comments: true
 ---
 
