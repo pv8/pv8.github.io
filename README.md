@@ -6,7 +6,6 @@ Source code from my personal website.
 ## Running locally
 
 1. Setup the environment as described in [Github Help][github-help]
-[jekyll]:
 
 2. Clone this repository:
 
