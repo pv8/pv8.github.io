@@ -4,11 +4,13 @@ layout: default
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta"><i class="fa fa-calendar"></i> {{ page.date | date: "%b %-d, %Y %H:%M" }} {% if page.author %} • {{ page.author }} {% endif %} {% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <h1 class="post-title"><a href="{{ page.url }}" itemprop="name">{{ page.title }}</a></h1>
+    <p class="post-meta">
+      <i class="fa fa-calendar"></i> {{ page.date | date: "%b %-d, %Y %H:%M" }} {% if page.author %} • {{ page.author }} {% endif %} {% if page.meta %} • {{ page.meta }}{% endif %}
+    </p>
   </header>
 
-  <article class="post-content">
+  <article class="post-content" itemscope itemtype="http://schema.org/Article">
 
     <meta itemprop="about" content="{{ page.excerpt | replace:'"',"&quot;" }}" />
     <meta itemprop="description" content="{{ page.excerpt | replace:'"',"&quot;" }}" />
@@ -18,8 +20,14 @@ layout: default
     <meta itemprop="datePublished" content="{{ page.date | date: '%F' }}" />
     <meta itemprop="discussionUrl" content="{{ site.url }}{{ page.url }}" />
 
-    {{ content }}
+    <div itemprop="articleBody">
+      {{ content }}
+    </div>
   </article>
+
+  <div class="post-footer">
+    <p><a href="https://github.com/{{ site.github.repository_nwo }}/edit/{{ site.branch }}/{{ page.path }}">Help improve this content</a>.</p>
+  </div>
 
   {% if site.related_posts.size > 0 %}
   <div id="related">

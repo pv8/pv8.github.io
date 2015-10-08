@@ -280,6 +280,15 @@
     }
 }
 
+.post-footer {
+  margin-bottom: $spacing-unit;
+  font-size: $base-font-size;
+  font-style: italic;
+  border-top: 1px dotted $grey-color-light;
+  border-bottom: 1px dotted $grey-color-light;
+  text-align: center;
+}
+
 /**
  * Contact
  */
