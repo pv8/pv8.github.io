@@ -19,6 +19,11 @@ layout: default
     <meta itemprop="copyrightYear" content="{{ page.date | date: '%Y' }}" />
     <meta itemprop="datePublished" content="{{ page.date | date: '%F' }}" />
     <meta itemprop="discussionUrl" content="{{ site.url }}{{ page.url }}" />
+    {% if page.image %}
+      <meta itemprop="image" content="{{ page.image }}" />
+    {% else %}
+      <meta itemprop="image" content="{{ site.default_image }}" />
+    {% endif %}
 
     <div itemprop="articleBody">
       {{ content }}

@@ -18,6 +18,8 @@
   <meta name="twitter:description" content="{{ page_description }}" />
   {% if page.image %}
     <meta name="twitter:image" content="{{ page.image }}" />
+  {% else %}
+    <meta property="twitter:image" content="{{ site.default_image }}" />
   {% endif %}
   <meta name="twitter:url" content="{{ url }}" />
 
@@ -40,6 +42,8 @@
   <meta property="og:url" content="{{ url }}" />
   {% if page.image %}
     <meta property="og:image" content="{{ page.image }}" />
+  {% else %}
+    <meta property="og:image" content="{{ site.default_image }}" />
   {% endif %}
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
