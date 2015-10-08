@@ -9,9 +9,10 @@ tags:
   - python
   - tips
 comments: true
+image: /media/Python-logo-notext.png
 ---
 
-Sometimes we need just a quick HTTP server up and running, and we don't want to bother setting up *Apache*, *Nginx* or anything like that. We just want to check a static website layout... or share some pictures in our local network. Quick and simple.
+Sometimes we just need a quick HTTP server up and running, and we don't want to bother setting up *Apache*, *Nginx* or anything like that. We just want to check a static website layout... or share some pictures in our local network. Quick and simple.
 
 Well, [Python][python_download] can help us with that. It comes with a built-in [simple HTTP server][py27simpleserver] which will turn a local directory into a web server directory. And it's only a line command away:
 {% highlight bash %}
