@@ -31,13 +31,14 @@ $ bundle exec rake test
 - Icons by [Font-Awesome][fontawesome]
 
 ## License
-The following directories and their contents are Copyright Pablo O Vieira. You may not reuse anything therein without my explicit permission:
+The **content** is licensed under a [Creative Commons Attribution 4.0 International License][cc-license].
+[![Creative Commons License][cc-image]][cc-license]
 
-* [_posts](https://github.com/povieira/povieira.github.io/tree/master/_posts)
-
-All other directories and files are [MIT Licensed][mit-license].
+The **code** is licensed under [MIT Licensed][mit-license].
 
 [github-help]: https://help.github.com/articles/using-jekyll-with-pages/#github-help
 [jekyll]: http://jekyllrb.com/
 [fontawesome]: http://fontawesome.io/
 [mit-license]: http://www.opensource.org/licenses/mit-license.php
+[cc-license]: href="http://creativecommons.org/licenses/by/4.0/
+[cc-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
