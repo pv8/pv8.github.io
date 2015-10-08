@@ -9,6 +9,15 @@ layout: default
   </header>
 
   <article class="post-content">
+
+    <meta itemprop="about" content="{{ page.excerpt | replace:'"',"&quot;" }}" />
+    <meta itemprop="description" content="{{ page.excerpt | replace:'"',"&quot;" }}" />
+    <meta itemprop="author" content="{{ site.author }}" />
+    <meta itemprop="copyrightHolder" content="{{ site.title }}" />
+    <meta itemprop="copyrightYear" content="{{ page.date | date: '%Y' }}" />
+    <meta itemprop="datePublished" content="{{ page.date | date: '%F' }}" />
+    <meta itemprop="discussionUrl" content="{{ site.url }}{{ page.url }}" />
+
     {{ content }}
   </article>
 
