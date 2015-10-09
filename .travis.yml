@@ -3,11 +3,13 @@ cache: bundler
 rvm:
   - 2.2.0
 
-before_script: bundle update
+before_script:
+  - bundle update
 
 script:
   - bundle exec jekyll build
   - time bundle exec rake test
+  - time bundle exec github-pages health-check
 
 env:
   global:
