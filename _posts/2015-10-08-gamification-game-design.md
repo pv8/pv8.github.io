@@ -13,7 +13,7 @@ comments: true
 image: /media/gamification_icon.png
 ---
 
-In early October, I was invited by [Prof. Wagner Damiani, Ph.D.][damiani] to talk about Gamification theory and practice to his undergrad students of [International Program in Management][fgv-ipm] at [FGV’s São Paulo School of Business Administration][fgv] in his **Gamification course**.
+In early October, [Prof. Wagner Damiani, Ph.D.][damiani] kindly invited me to talk about Gamification to his undergrad students of [International Program in Management][fgv-ipm] at [FGV’s São Paulo School of Business Administration][fgv].
 
 It was great to be able to share some ideas about a topic I really like with such brilliant students from around the world.
 
