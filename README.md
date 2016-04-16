@@ -1,5 +1,5 @@
-# povieira.github.io
-[![Build Status](https://travis-ci.org/povieira/povieira.github.io.svg?branch=master)](https://travis-ci.org/povieira/povieira.github.io)
+# pv8.github.io
+[![Build Status](https://travis-ci.org/pv8/pv8.github.io.svg?branch=master)](https://travis-ci.org/pv8/pv8.github.io)
 
 Source code from my personal website.
 
@@ -10,7 +10,7 @@ Source code from my personal website.
 2. Clone this repository:
 
   ```bash
-  $ git clone git@github.com:povieira/povieira.github.io.git
+  $ git clone git@github.com:pv8/pv8.github.io.git
   ```
 
 3. Running jekyll locally:
