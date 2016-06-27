@@ -10,12 +10,12 @@ exclude:
 timezone: America/Sao_Paulo
 
 # Site settings
-title: Pablo O Vieira
-email: mail@povieira.com
+title: Pablo Vieira
+email: contact@pv8.io
 
 meta:
-  description: "Pablo O Vieira personal website."
-  keywords: project management, agile, software, coding, programming, python, database, gamification
+  description: "Pablo Vieira's personal website."
+  keywords: project management, agile, software, coding, programming, python, database, gamification, jeenga, marketing, crm
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://povieira.com" # the base hostname & protocol for your site
@@ -29,13 +29,13 @@ default_image: https://s.gravatar.com/avatar/80fc0ea8a3a2161074feb3725901d093?s=
 # Posts
 permalink: /posts/:year/:month/:day/:title/
 
-disqus_shortname: povieira
+disqus_shortname: pv8
 
 author: Pablo
 
 # Profile
 profile:
-  name: Pablo O Vieira
+  name: Pablo Vieira
   avatar: https://s.gravatar.com/avatar/80fc0ea8a3a2161074feb3725901d093?s=200
 
 # Build settings
