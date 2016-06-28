@@ -18,7 +18,7 @@ meta:
   keywords: project management, agile, software, coding, programming, python, database, gamification, jeenga, marketing, crm
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://povieira.com" # the base hostname & protocol for your site
+url: "http://pv8.io" # the base hostname & protocol for your site
 
 branch: master
 
