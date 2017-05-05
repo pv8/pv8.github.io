@@ -7,6 +7,7 @@
         <ul class="social-links">
           {% for profile_hash in site.data.social-profiles %}
             {% assign profile = profile_hash[1] %}
+            {% if profile.show %}
             <li>
               <a href="{{ profile.url }}" target="_blank" class="icon-link">
                 <span class="icon-desc">{{ profile.name }}</span>
@@ -14,11 +15,15 @@
                 <i class="fa fa-{{ profile_hash[0] }} fa-3x icon"></i>
               </a>
             </li>
+            {% endif %}
           {% endfor %}
         </ul>
       </div>
       <div class="footer-col">
-        <span class="post-meta">Copyright &#169; 2016 • {{ site.profile.name }}</span>
+        <span class="post-meta">PGP <a href="{{ site.pgp.url }}" target="_blank"><code>{{ site.pgp.fingerprint }}</code></a></span>
+      </div>
+      <div class="footer-col">
+        <span class="post-meta">Copyright &#169; {{ site.time | date: '%Y' }} • {{ site.profile.name }}</span>
       </div>
     </div>
   </div>
