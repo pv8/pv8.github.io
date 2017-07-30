@@ -29,6 +29,7 @@ $ bundle exec rake test
 ## Credits
 - Layout from [Jekyll][jekyll] default theme
 - Icons by [Font-Awesome][fontawesome]
+- Favicons generated with [Real Favicon Generator][favicongenerator]
 
 ## License
 The **content** is licensed under a [Creative Commons Attribution 4.0 International License][cc-license].
@@ -42,3 +43,4 @@ The **code** is licensed under [MIT Licensed][mit-license].
 [mit-license]: http://www.opensource.org/licenses/mit-license.php
 [cc-license]: href="http://creativecommons.org/licenses/by/4.0/
 [cc-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[favicongenerator]: https://realfavicongenerator.net
