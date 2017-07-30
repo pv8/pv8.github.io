@@ -13,12 +13,15 @@ timezone: America/Sao_Paulo
 title: Pablo Vieira
 email: contact@pv8.io
 
+app_name: PV
+
 meta:
   description: "Pablo Vieira's personal website."
-  keywords: project management, agile, software, coding, programming, python, database, gamification, jeenga, marketing, crm
+  keywords: project management, agile, scrum, coding, programming, python, database, nosql, gamification, cto, jeenga, marketing, crm
+  theme_color: "#fff"
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://pv8.io" # the base hostname & protocol for your site
+url: "https://www.pv8.io" # the base hostname & protocol for your site
 
 branch: master
 
@@ -47,3 +50,13 @@ markdown: kramdown
 
 gems:
   - jekyll-sitemap
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
