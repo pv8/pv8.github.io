@@ -2,6 +2,7 @@ _drafts/
 _site/
 .sass-cache/
 .rbenv/
+.ruby-version
 
 Gemfile.lock
 
