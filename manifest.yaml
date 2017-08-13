@@ -8,7 +8,7 @@ permalink: manifest.json
   "short_name": "{{ site.author }}",
   "description": "{{ site.meta.description }}",
   "start_url": "./?utm_source=web_app_manifest&utm_medium=web_app_manifest",
-  "display": "standalone",
+  "display": "fullscreen",
   "orientation": "portrait",
   "background_color": "{{ site.meta.theme_color }}",
   "theme_color": "{{ site.meta.theme_color }}",
