@@ -10,9 +10,12 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#bf921e">
-  <meta name="apple-mobile-web-app-title" content="{{ site.app_name }}">
   <meta name="application-name" content="{{ site.app_name }}">
   <meta name="theme-color" content="{{ site.meta.theme_color }}">
+
+  <meta name="apple-mobile-web-app-title" content="{{ site.app_name }}">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
   {% capture page_title %}{% if page.title %}{{ " &middot; pv8.io" | prepend: page.title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
   {% capture page_description %}{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.meta.description }}{% endif %}{% endcapture %}

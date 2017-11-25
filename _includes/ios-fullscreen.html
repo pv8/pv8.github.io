@@ -1,0 +1,12 @@
+<script type="text/javascript">
+$(document).ready(function(){
+  // PWA: iOS web full screen seamless experience
+  if(window.navigator.standalone == true) {
+    // all links remain in web app mode
+    $('a').click(function() {
+      window.location = $(this).attr('href');
+      return false;
+    });
+  }
+});
+</script>
