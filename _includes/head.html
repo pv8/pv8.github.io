@@ -16,6 +16,7 @@
   <meta name="apple-mobile-web-app-title" content="{{ site.app_name }}">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="mobile-web-app-capable" content="yes">
 
   {% capture page_title %}{% if page.title %}{{ " &middot; pv8.io" | prepend: page.title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
   {% capture page_description %}{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.meta.description }}{% endif %}{% endcapture %}
