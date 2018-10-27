@@ -17,7 +17,7 @@ app_name: PV
 
 meta:
   description: "Pablo Vieira's personal website."
-  keywords: project management, agile, scrum, coding, programming, python, database, nosql, gamification, cto, jeenga, marketing, crm
+  keywords: software engineer, coding, programming, project management, agile, scrum, team, python, django, database, nosql, gamification, cto, lending, fintech
   theme_color: "#fff"
 
 baseurl: "" # the subpath of your site, e.g. /blog/
