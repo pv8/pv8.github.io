@@ -39,7 +39,7 @@ Here are the slides of the presentation:
 <iframe src="https://docs.google.com/presentation/d/1HnAIXn59KBvkuPEcBdDdmD3txtoHRmTW32jdqb7xhjg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389"  allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
-[damiani]: http://www.damiani.net
+[damiani]: https://eaesp.fgv.br/en/faculty/wagner-bronze-damiani
 [fgv]: http://eaesp.fgvsp.br/en
 [fgv-ipm]: http://eaesp.fgvsp.br/en/international-activities/exchange
 [fgv-imq]: http://eaesp.fgvsp.br/en/teaching-knowledge/departments/IMQAA

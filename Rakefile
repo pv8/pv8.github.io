@@ -6,7 +6,7 @@ def html_proofer
   puts "HTML Proofer version: #{HTMLProofer::VERSION}"
   HTMLProofer.check_directory("./_site", {
     :allow_hash_href => true,
-    :http_status_ignore => [999] # LinkedIn returning 999
+    :url_ignore => [/linkedin.com/, /keybase.io/]
   }).run
 end
 
