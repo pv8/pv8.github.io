@@ -1,5 +1,5 @@
 # pv8.github.io
-[![Build Status](https://travis-ci.org/pv8/pv8.github.io.svg?branch=master)](https://travis-ci.org/pv8/pv8.github.io)
+[![Build Status](https://travis-ci.org/pv8/pv8.github.io.svg?branch=main)](https://travis-ci.org/pv8/pv8.github.io)
 
 Source code of my personal website.
 

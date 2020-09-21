@@ -23,7 +23,7 @@ meta:
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.pv8.io" # the base hostname & protocol for your site
 
-branch: master
+branch: main
 
 ga_tracking_code: UA-34825674-1
 
