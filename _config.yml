@@ -50,7 +50,9 @@ pgp:
 # Build settings
 markdown: kramdown
 
-gems:
+github: [metadata]
+
+plugins:
   - jekyll-sitemap
 
 compress_html:
