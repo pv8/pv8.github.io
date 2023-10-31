@@ -11,7 +11,7 @@ timezone: America/Sao_Paulo
 
 # Site settings
 title: Pablo Vieira
-email: contact@pv8.io
+email: contact@povieira.com
 
 app_name: PV
 
@@ -21,7 +21,7 @@ meta:
   theme_color: "#fff"
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://www.pv8.io" # the base hostname & protocol for your site
+url: "https://pv8.github.io" # the base hostname & protocol for your site
 
 branch: main
 
@@ -29,7 +29,7 @@ ga_tracking_code: UA-34825674-1
 
 hj_id: 527097
 
-default_image: https://s.gravatar.com/avatar/80fc0ea8a3a2161074feb3725901d093?s=200
+default_image: https://github.com/pv8.png
 
 # Posts
 permalink: /posts/:year/:month/:day/:title/
@@ -41,7 +41,7 @@ author: Pablo
 # Profile
 profile:
   name: Pablo Vieira
-  avatar: https://s.gravatar.com/avatar/80fc0ea8a3a2161074feb3725901d093?s=200
+  avatar: https://github.com/pv8.png
 
 pgp:
   fingerprint: 38EB FF7D 03DA E2D5 4D39 5007 3155 7CED BBAD 4FA3
